@@ -1,6 +1,6 @@
 import "styles/inicio.css"; 
 import "styles/App.css";
-
+ 
 import Index from 'pages/index';
 import RhodesianPageInfo from 'pages/xxs';
 import BorderColliePageInfo from "pages/borderCollie";
