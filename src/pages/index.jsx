@@ -12,16 +12,15 @@ const Index = () => {
       <>
        <Carrusel slides={SliderData} />
         <section>
-          <h1>Razas de Perros</h1>
+          <h1 class=" relative row top-20">Razas de Perros</h1>
+          <div>
           <ul className ="breedCardContainer  ">
             <CardRazasPerros nombreRaza = "BorderCollie" imagen = {borderCollie} ruta = '/borderCollie'/>
             <CardRazasPerros nombreRaza = "Rhodesian" imagen = {rhodesian}  ruta = '/xxs' /> 
             <CardRazasPerros nombreRaza = "BorderCollie" imagen = {borderCollie} ruta = '/borderCollie'/>
-            <CardRazasPerros nombreRaza = "Rhodesian" imagen = {rhodesian}  ruta = '/rhodesian' />             
-            <CardRazasPerros nombreRaza = "Rhodesian" imagen = {rhodesian}  ruta = '/rhodesian' />             
-            <CardRazasPerros nombreRaza = "Rhodesian" imagen = {rhodesian}  ruta = '/rhodesian' />             
-            
+
           </ul>
+          </div>
 
 
 

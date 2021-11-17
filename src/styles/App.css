@@ -102,20 +102,23 @@ ul {
 .breedCardContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content:space-around ;
 }
 
 .breedCard {
   margin: 10px;
-  background-color: rgb(78, 78, 90);
-  box-shadow: 5px 10px 5px rgb(231, 231, 231);
+  background-color: #f5caa7;
+  box-shadow: 5px 10px 5px rgb(255, 221, 221);
   border-radius: 10px;
 }
 
 .breedTitle {
-  color: white;
-  margin: 10px;
-  font-weight: bold;
+  color: #D16B18;
+  margin: 20px  ;
+   
   font-size: x-large;
+
+  
 }
 
 .contenedorImagen {
@@ -132,12 +135,15 @@ ul {
 
 .contenedorImagen > img {
   object-fit: cover;
-  width: 100%;
+  width: 1200px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
- 
+/* .img {
+  height: 180px;
+  width: 180px;
+}  */
 
 .backgroundVerde{
   background-color: green;
@@ -176,7 +182,7 @@ ul {
   font-size: 3rem;
   color:rgba(231, 231, 231, 0.692);  
   z-index: 10;
-  cursor: pointer;
+  cursor: pointer; 
   user-select: none;
 }
 
@@ -186,6 +192,7 @@ ul {
 }
 
 .slide.active{
+  width: 1097px;
   opacity: 1;
   transition-duration: 1.5s;
   transform: scale(1.08);

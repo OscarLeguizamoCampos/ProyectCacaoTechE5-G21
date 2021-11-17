@@ -17,11 +17,11 @@ return (
       </div>
     </div>
     <div  color="#d16b18" >
-    <div   className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-row-reverse mx-auto box-content w-1200 wrapper menu-bg custom-menu-bg border-bottom-black-tr">
-    <b-navbar  toggleable="lg" type="dark" variant="info">
-   <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-   <b-collapse id="nav-collapse" is-nav >  
-   <b-navbar-nav className="menu nav justify-content-start     "    > 
+    <div   className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-row-reverse mx-auto box-content  wrapper menu-bg custom-menu-bg border-bottom-black-tr">
+    <div toggleable="lg" type="dark" variant="info">
+   <div target="nav-collapse"></div>
+   < div id="nav-collapse" is-nav={true.toString()}>  
+   < div  className="menu nav justify-content-start     "    > 
   
      <ul id="menu-menu-1"  className="menu  flex  justify-end" width= "1200px">
        <li className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-21">
@@ -65,12 +65,12 @@ return (
          {/* </p>            */}
      </ul> 
    
-   </b-navbar-nav>
+   </div>
                 <b-navbar-nav class="ml-auto"></b-navbar-nav>
        
   
-   </b-collapse>   
- </b-navbar>    </div> </div>
+   </div>   
+ </div>    </div> </div>
  { /*   <div className="row fondo flex flex-row-reverse mx-auto box-content w-1200" >      
              
    
