@@ -8,9 +8,9 @@ const Layout = ({children}) => {
         <Header />
          
             <main>
-                {children}
+                {children} <div class="z-30"><Footer /></div> 
             </main>
-        <Footer />
+            
         </div>
 
     )

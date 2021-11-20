@@ -20,13 +20,13 @@ const Carrusel = ({ slides}) => {
 
 
     return (
-        <section className="slider">
+        <section className="slider container mx-auto">
             <AiOutlineLeft className="left-arrow" onClick={prevSlide} />
             <AiOutlineRight className="right-arrow" onClick={nextSlide} />
             {SliderData.map((slide, index) =>{
                 return(
                     <div className={index === current ? 'slide active' : 'slide'} key ={index}>   
-                        {index === current && (<img class="relative top-7" src={slide.image} alt='imagen1' />)}
+                        {index === current && (<img class="  object-fill" src={slide.image} alt='imagen1' />)}
                     </div>
                 )
                

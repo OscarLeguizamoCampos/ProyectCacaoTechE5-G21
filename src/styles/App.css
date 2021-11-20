@@ -12,11 +12,17 @@ ul {
   margin: 0px;
 }
 
+.choco{
+  color: #D16B18;
+  font-size: xx-large;
+}
+
 .mainContainer{
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow-y: hidden;
+   
 }
 
 .mainContainer > main{
@@ -102,7 +108,8 @@ ul {
 .breedCardContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around ;
+  justify-content:space-between ;
+  z-index: 100;
 }
 
 .breedCard {
@@ -123,7 +130,7 @@ ul {
 
 .contenedorImagen {
   width: 240px;
-  height: 350px;
+  height: 300px;
   display: flex;
   margin-bottom: 10px;
 }
@@ -136,8 +143,7 @@ ul {
 .contenedorImagen > img {
   object-fit: cover;
   width: 1200px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+ 
 }
 
 /* .img {
@@ -153,21 +159,19 @@ ul {
 
 .slider{
   position: relative;
-  height: 36vh;
+  flex: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.image{
-  width: 1200px;
-  height: 300px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .right-arrow{
-  position: absolute;
-  top: 42%;
-  right: 32px;
+  position: relative;
+   
+  top: 47%;
+  left: 1130px;
   font-size: 3rem;
   color:rgba(231, 231, 231, 0.692) ;
   z-index: 10;
@@ -176,9 +180,9 @@ ul {
 }
 
 .left-arrow{
-  position: absolute;
-  top: 42%;
-  left: 32px;
+  position: relative;
+  top: 47%;
+  left: 60px;
   font-size: 3rem;
   color:rgba(231, 231, 231, 0.692);  
   z-index: 10;

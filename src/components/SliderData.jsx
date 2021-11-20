@@ -1,13 +1,15 @@
-  
+import slide1 from 'media/spander-1.png'  
+import slide2 from 'media/spander-2.png'  
+import slide3 from 'media/spander-3.png'  
 
 export const SliderData =[
     {
-        image: 'https://i.postimg.cc/MKTHDZkP/spander-1.png'
+        image: slide1
     },
     {
-        image: 'https://i.postimg.cc/fWHTJ43x/spander-2.png'
+        image: slide2
     },    
     {
-        image: 'https://i.postimg.cc/J0t8bnyj/spander-3.png'
+        image: slide3
     },
 ]
