@@ -55,22 +55,37 @@ ul {
 .textbutton{
   
   position: relative;
-  bottom: 8px;
+  bottom: 9px;
   text-transform: uppercase;
   text-decoration: none;
+  
 
 }
 .mainButton {
   position: relative;
-  height: 26px;
-  top:10px;
+  height: 28px;
+  top:8px;
   background-color: #1bb76e;
   color: white;
   padding-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mainButton:hover {
   box-shadow: 1px 1px green;
+}
+
+.mainButton2 {
+  position: relative;
+  height: 55px;
+  width: 140px;
+  background-color: #D16B18;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.mainButton2:hover, .mainButton2:focus {
+  box-shadow: 1px 1px #f09e5c;
 }
 
 .secondaryButton {
@@ -108,10 +123,22 @@ ul {
 .breedCardContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between ;
+  justify-content:space-evenly ;
   z-index: 100;
 }
-
+.breedCardContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  z-index: 100;
+  
+}
+.breedCardTeamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly ;
+  z-index: 100;
+}
 .breedCard {
   margin: 10px;
   background-color: #f5caa7;
@@ -123,7 +150,7 @@ ul {
   color: #D16B18;
   margin: 20px  ;
    
-  font-size: x-large;
+  /* font-size: x-large; */
 
   
 }
@@ -134,7 +161,12 @@ ul {
   display: flex;
   margin-bottom: 10px;
 }
-
+.contenedorImagen3 {
+  width: 140px;
+  height: 200px;
+  display: flex;
+  margin-bottom: 10px;
+}
 .contenedorImagen:hover {
   cursor: pointer;
   transform: scale(1.02);
@@ -159,6 +191,7 @@ ul {
 
 .slider{
   position: relative;
+  margin-left: 160px;
   flex: auto;
   height: 100%;
   display: flex;
@@ -169,11 +202,13 @@ ul {
 
 .right-arrow{
   position: relative;
-   
-  top: 47%;
-  left: 1130px;
-  font-size: 3rem;
-  color:rgba(231, 231, 231, 0.692) ;
+  background-color: #c7f4ff5b;
+  height: 314px; 
+  
+  /* top: 130px; */
+  left: 1300px;
+  font-size: 3.5rem;
+  color:rgba(99, 93, 93, 0.918) ;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -181,22 +216,26 @@ ul {
 
 .left-arrow{
   position: relative;
-  top: 47%;
-  left: 60px;
-  font-size: 3rem;
-  color:rgba(231, 231, 231, 0.692);  
+  
+  background-color: #c7f4ff5b;
+  height: 314px; 
+  /* margin-right:10px; */
+  /* top: 130px; */
+  left: 4px;
+  font-size: 3.5rem;
+  color:rgba(99, 93, 93, 0.918) ;
   z-index: 10;
   cursor: pointer; 
   user-select: none;
 }
 
 .slide {
-   
+   /* width: 1500px; */
   transition-duration: 1s ease  ;
 }
 
 .slide.active{
-  width: 1097px;
+  width: 1300px;
   opacity: 1;
   transition-duration: 1.5s;
   transform: scale(1.08);

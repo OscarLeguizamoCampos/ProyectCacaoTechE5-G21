@@ -9,9 +9,9 @@ const CardRecomendados = ({nombreProducto, precioProducto, imagen, ruta }) =>{
             <img class="img p-3"  src={imagen} alt={nombreProducto} />
           </div>
            
-          <span class="breedTitle ">{nombreProducto}</span> 
+          <span class="breedTitle text-lg ">{nombreProducto}</span> 
           <div class=" "> 
-          <span class="breedTitle"  >$ {precioProducto}</span>
+          <span class="breedTitle text-lg"  >$ {precioProducto}</span>
           </div>
       </li>
      

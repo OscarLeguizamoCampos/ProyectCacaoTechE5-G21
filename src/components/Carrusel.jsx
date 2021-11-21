@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { SliderData } from 'components/SliderData';
 import {AiOutlineRight,AiOutlineLeft} from 'react-icons/ai'
- 
-const Carrusel = ({ slides}) => {
+// import { useSpringCarousel } from 'react-spring-carousel-js' 
+const Carrusel = ( {slides} ) => {
     const [current, setCurrent] = useState(0)    
     const length = slides.length;
 
@@ -20,13 +20,13 @@ const Carrusel = ({ slides}) => {
 
 
     return (
-        <section className="slider container mx-auto">
+        <section className="slider container ">
             <AiOutlineLeft className="left-arrow" onClick={prevSlide} />
             <AiOutlineRight className="right-arrow" onClick={nextSlide} />
             {SliderData.map((slide, index) =>{
                 return(
                     <div className={index === current ? 'slide active' : 'slide'} key ={index}>   
-                        {index === current && (<img class="  object-fill" src={slide.image} alt='imagen1' />)}
+                        {index === current && (<img class="  " src={slide.image} alt='imagen1' />)}
                     </div>
                 )
                
@@ -34,6 +34,7 @@ const Carrusel = ({ slides}) => {
             })}
         </section>
     )
+
 }
 
 export default Carrusel

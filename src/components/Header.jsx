@@ -8,7 +8,7 @@ return (
     <div className="">
       <div className="row  ">
         <div className="flex flex-col justify-center ">
-          <img src={logo} className="object-fill" alt="cacao-tech2-0" />
+          <img src={logo} className="object-fill h- max-h-40" alt="cacao-tech2-0" />
         </div>
       </div>
     </div>

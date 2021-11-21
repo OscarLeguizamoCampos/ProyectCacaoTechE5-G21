@@ -5,7 +5,15 @@ module.exports = {
     container: {
     padding: '2rem',
   },
+  
     extend: {},
+    fontSize: {
+      sm: ['14px', '20px'],
+      base: ['16px', '24px'],
+      xs: ['18px', '28px'],
+      lg: ['20px', '28px'],
+      xl: ['32px', '40px'],
+    },
   },
   variants: {
     extend: {},
