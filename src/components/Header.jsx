@@ -1,6 +1,7 @@
 import logo from "media/cacao-tech.png";
 import "styles/inicio.css"; 
 import { Link } from "react-router-dom";
+import MenuMobile from "./MenuMobile";
 // function Header() {
 const Header = () =>{   
 return (
@@ -12,12 +13,18 @@ return (
         </div>
       </div>
     </div>
+    
     <div color="#d16b18">
-      <div className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-row-reverse mx-auto box-content  wrapper menu-bg custom-menu-bg border-bottom-black-tr">
-        <div toggleable="lg" type="dark" variant="info">
+      <MenuMobile />
+      <div className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-shrink mx-auto box-content  wrapper menu-bg custom-menu-bg border-bottom-black-tr  ">
+
+   
+
           <div target="nav-collapse"></div>
           <div id="nav-collapse" is-nav={true.toString()}>
-            <div className="menu nav justify-content-start     ">
+
+            <div className="menu nav justify-content-start pr-8 hidden md:block   ">
+ 
               <ul
                 id="menu-menu-1" className="menu  flex  justify-end">
                 <li className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-21">
@@ -92,11 +99,11 @@ return (
                 {/* </p>            */}
               </ul>
             </div>
-            <b-navbar-nav class="ml-auto"></b-navbar-nav>
+            <b-navbar-nav className="ml-auto"></b-navbar-nav>
           </div>
         </div> 
       </div> 
-    </div>
+    
 
     {/* <ul class="navbar">
       <li>
