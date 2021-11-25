@@ -15,7 +15,7 @@ return (
     </div>
     
     <div color="#d16b18">
-      <MenuMobile />
+      {/* <MenuMobile /> */}
       <div className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-shrink mx-auto box-content  wrapper menu-bg custom-menu-bg border-bottom-black-tr  ">
 
    

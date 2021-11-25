@@ -12,7 +12,7 @@ const Index = () => {
     return (
     <div>
       <>
-       <div><Carrusel slides={SliderData} /></div>
+       <div className=" "><Carrusel slides={SliderData} /></div>
         <section>
           <h1 class="relative choco text-center font-semibold text-6x1 row top-2 bottom-2 p-8">PRODUCTOS RECIENTES</h1>
           <div>

@@ -191,7 +191,7 @@ ul {
 
 .slider{
   position: relative;
-  margin-left: 160px;
+  
   flex: auto;
   height: 100%;
   display: flex;
@@ -201,27 +201,27 @@ ul {
 }
 
 .right-arrow{
-  position: relative;
-  background-color: #c7f4ff5b;
-  height: 314px; 
+  position: absolute;
+  /* background-color: #c7f4ff5b;
+  height: 314px;  */
   
   /* top: 130px; */
-  left: 1300px;
+  /* left: 1300px;
   font-size: 3.5rem;
-  color:rgba(99, 93, 93, 0.918) ;
+  color:rgba(99, 93, 93, 0.918) ; */
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 
 .left-arrow{
-  position: relative;
+  position: absolute;
   
   background-color: #c7f4ff5b;
   height: 314px; 
   /* margin-right:10px; */
   /* top: 130px; */
-  left: 4px;
+  /* left: 4px; */
   font-size: 3.5rem;
   color:rgba(99, 93, 93, 0.918) ;
   z-index: 10;

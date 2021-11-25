@@ -47,10 +47,10 @@ const App = () =>{
          <Route path = '/admin/administrador' ><Administrador/></Route> 
  {/*RUTA LOGIN  */}
          <Route path = '/login' ><Login /></Route>
-
+{/* 
           <Route path = '/xxs' ><RhodesianPageInfo /></Route>
 
-          <Route path = '/borderCollie' ><BorderColliePageInfo /></Route>
+          <Route path = '/borderCollie' ><BorderColliePageInfo /></Route> */}
 {/* RUTA CONTACTAR */}
           <Route path = '/contactar' ><Contactar /></Route>
 {/* RUTAS PRODUCTOS */}
