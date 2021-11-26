@@ -5,7 +5,7 @@ const MenuMobile = () => {
     const [isList, setIsList] = useState(false);
     const [isSubList, setIsSubList] = useState(false);
     return (
-        <div className=" bg-pro-50 border-r border-pro-100 w-72    flex flex-col justify-between flex-nowrap    md:hidden  ">
+        <div className=" bg-pro-50 border-r border-pro-100 w-64    flex flex-col justify-between flex-nowrap    md:hidden  ">
         <div className="          fondo flex   mx-auto box-content  wrapper    ">
 
 
@@ -154,9 +154,9 @@ const MenuMobile = () => {
                                     </div>
                                 </Link>
                             </div>
-                            <div className="md:hidden h-11 w-60"> 
+                            <div className="md:hidden h-11 w-60 text-center"> 
                         <Link to="/login"  >
-                            <button class="botonGenerico mainButton  inline-block  align-top"><p class="textbutton">Acceder</p>  </button>
+                            <button class="botonGenerico mainButton pt-1 inline-block w-full align-center"><p class="textbutton pt-3 ">Acceder</p>  </button>
                         </Link>      </div>
                         </div>
      

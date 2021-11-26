@@ -240,7 +240,18 @@ ul {
   transition-duration: 1.5s;
   transform: scale(1.08);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.carousel-container {
+   
+  padding-left: unset;
+  position: relative;
+  margin: auto;
+}
 
 
 

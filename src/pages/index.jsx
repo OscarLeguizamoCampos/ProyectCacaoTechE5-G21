@@ -2,7 +2,7 @@ import CardRecomendados from "components/CardRecomendados";
 import CardTeam from "components/CardTeam";
 import CardTestimonio from "components/CardTestimonio";
 import Carrusel from "components/Carrusel";
-import { SliderData } from "components/SliderData";
+ 
 
 import borderCollie from 'media/borderCollie.jpg';
 import rhodesian from 'media/rhodesian.jpg'
@@ -12,7 +12,7 @@ const Index = () => {
     return (
     <div>
       <>
-       <div className=" "><Carrusel slides={SliderData} /></div>
+       <div className=" "><Carrusel /></div>
         <section>
           <h1 class="relative choco text-center font-semibold text-6x1 row top-2 bottom-2 p-8">PRODUCTOS RECIENTES</h1>
           <div>
