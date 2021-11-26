@@ -35,7 +35,7 @@ function Carrusel() {
           <Carousel 
             carousel-container
             data={data}
-            time={2000}
+            time={5000}
             width="1200px"
             height="300px"
              
