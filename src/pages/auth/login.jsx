@@ -94,7 +94,7 @@ const Login = () => {
                 <button
                         type='button'
                         className='group relative w-40 z-20 flex justify-center  py-2 px-4 border border-white 
-                        text-sm font-medium rounded-md text-white bg-indigo-500 border-whitebg-pro-100 hover:bg-orange-500 focus:outline-none 
+                        text-sm font-medium rounded-md text-white bg-red-500 border-whitebg-pro-100 hover:bg-red-600 focus:outline-none 
                         focus:ring-2 focus:ring-offset-2 focus:ring-pro-100 ' 
                     >    
                         Regresar

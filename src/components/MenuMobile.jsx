@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useState } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
 const MenuMobile = () => {
     const [isList, setIsList] = useState(false);
     const [isSubList, setIsSubList] = useState(false);
+    const { loginWithRedirect } = useAuth0();
     return (
         <div className=" bg-pro-50 border-r border-pro-100 w-64    flex flex-col justify-between flex-nowrap    md:hidden  ">
         <div className="          fondo flex   mx-auto box-content  wrapper    ">
@@ -155,9 +158,9 @@ const MenuMobile = () => {
                                 </Link>
                             </div>
                             <div className="md:hidden h-11 w-60 text-center"> 
-                        <Link to="/login"  >
-                            <button class="botonGenerico mainButton pt-1 inline-block w-full align-center"><p class="textbutton pt-3 ">Acceder</p>  </button>
-                        </Link>      </div>
+                         
+                            <button onClick={() => loginWithRedirect()}  class="botonGenerico mainButton pt-1 inline-block w-full align-center"><p class="textbutton pt-2 ">Acceder</p>  </button>
+                            </div>
                         </div>
      
       

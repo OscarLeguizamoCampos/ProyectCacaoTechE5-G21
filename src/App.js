@@ -10,6 +10,7 @@ import BorderColliePageInfo from "pages/borderCollie";
 import Layout from "layouts/Layout";
 import PrivateLayout from "layouts/PrivateLayout";
 import AuthLayout from "layouts/AuthLayout";
+import { Auth0Provider } from "@auth0/auth0-react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -35,10 +36,12 @@ import Categorias from "pages/admin/categorias";
 
 
 const App = () =>{
-  return (
-    <div className="App">
-    
-               
+  return (    <Auth0Provider
+    domain="cacaotech.us.auth0.com"
+    clientId="jrjKBFTe7kLNUgrO32j4uC9V2oaY6HUr"
+    redirectUri={window.location.origin}
+    >
+  
       <Router>
         {/* RUTAS ADMINISTRADOR */}      
           <Switch>
@@ -78,7 +81,9 @@ const App = () =>{
             <Route path = '/xxs' ><RhodesianPageInfo /></Route>
 
             <Route path = '/borderCollie' ><BorderColliePageInfo /></Route> */}
-            <Route path = {['/',]}>
+            <Route path = {['/', '/cursos/menu-servicios', '/cursos/curso-fertilizantes', '/cursos/curso-control-plagas',
+             '/products/productos', '/products/fertilizantes', '/products/plaguicidas', '/products/clones', 
+             '/products/herramientas', '/products/infraestructura', '/contactar' ]}>
               <Layout>
                 <Switch>
                     {/* RUTA CONTACTAR */}
@@ -102,7 +107,7 @@ const App = () =>{
         </Switch>
       </Router>
 
-    </div>
+      </Auth0Provider>
   );
 }
 export default App;

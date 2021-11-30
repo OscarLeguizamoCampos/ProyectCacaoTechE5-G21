@@ -2,6 +2,7 @@
 /src/pages/borderCollie.jsx
 /src/pages/xxs.jsx
 /src/components/CardRazasPerros.jsx
+/src/auth/Login_2a.jsx
 # dependencies
 /node_modules
 /.pnp
