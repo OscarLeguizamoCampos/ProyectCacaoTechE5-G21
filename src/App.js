@@ -2,8 +2,8 @@ import "styles/inicio.css";
 import "styles/App.css";
  
 import Index from 'pages/index';
-import RhodesianPageInfo from 'pages/xxs';
-import BorderColliePageInfo from "pages/borderCollie";
+// import RhodesianPageInfo from 'pages/xxs';
+// import BorderColliePageInfo from "pages/borderCollie";
 
 
 
@@ -36,10 +36,12 @@ import Categorias from "pages/admin/categorias";
 
 
 const App = () =>{
-  return (    <Auth0Provider
+  return (    
+  <Auth0Provider
     domain="cacaotech.us.auth0.com"
     clientId="jrjKBFTe7kLNUgrO32j4uC9V2oaY6HUr"
-    redirectUri={window.location.origin}
+    redirectUri="http://localhost:3000/administrador"
+    // redirectUri={window.location.origin}
     >
   
       <Router>
@@ -107,7 +109,7 @@ const App = () =>{
         </Switch>
       </Router>
 
-      </Auth0Provider>
+    </Auth0Provider>
   );
 }
 export default App;

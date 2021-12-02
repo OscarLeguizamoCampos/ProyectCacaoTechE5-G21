@@ -5,12 +5,12 @@ const HeaderSidebar = () => {
     const { logout } = useAuth0();
     return(
         
-        <div className="  h-20 bg-pro-100   grid grid-cols-2 justify-between inset-0 fixed left-72 z-20 rounded">
+        <div className="  h-20 bg-pro-100  grid-flow-col grid grid-cols-2 justify-between inset-0 fixed left-72 z-20 rounded">
             <div className="col-span-1 text-white text-extrabold font-mono text-xl p-5  ">
                 ADMINISTRADOR CACAOTECH
             </div>
             {/* <Link to='/login' className=" relative mx-96 mb-2 p-5"> */}
-            <div className=" relative mx-96 mb-2 p-5">
+            <div className=" relative  flex justify-end mb-2 p-5">
                 <button
                     onClick={() => logout({ returnTo: window.location.origin })}
                     className='group relative   w-40 z-20 flex justify-center  py-2 px-4 border border-white 

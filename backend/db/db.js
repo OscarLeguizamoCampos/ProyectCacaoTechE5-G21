@@ -15,7 +15,7 @@ let baseDeDatos;
 const conectarBD = (callback) => {
   client.connect((err, db) => {
     if (err) {
-      console.error('Error conectando a la base de datos');
+      console.error('Error conectando a la base de dato');
       return 'error';
     }
     baseDeDatos = db.db('cacaoTech');

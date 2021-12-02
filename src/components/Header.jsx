@@ -2,10 +2,10 @@ import logo from "media/cacao-tech.png";
 import "styles/inicio.css"; 
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import MenuMobile from "./MenuMobile";
+ 
 // function Header() {
 const Header = () =>{   
-  const { loginWithRedirect } = useAuth0();
+const { loginWithRedirect } = useAuth0();
 return (
   <header>
     <div className="">
@@ -95,10 +95,7 @@ return (
                     </button>
                   
                 </li>
-                {/* <p class=" c  "  > */}
-                {/* <Link to="/login" v-if = "!isLogin"><a href="" class="  nav-link has-sub-menu "  >Acceder</a></Link>   */}
-                {/* <router-link to="Admin" v-else ><a href="" class="  nav-link has-sub-menu "  >Admin</a></router-link> */}
-                {/* </p>            */}
+  
               </ul>
             </div>
             <b-navbar-nav className="ml-auto"></b-navbar-nav>
