@@ -4,6 +4,7 @@
 /src/components/CardRazasPerros.jsx
 /src/auth/Login_2a.jsx
 # dependencies
+/backend/node_modules
 /node_modules
 /.pnp
 .pnp.js

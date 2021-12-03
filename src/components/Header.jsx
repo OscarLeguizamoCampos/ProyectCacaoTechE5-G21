@@ -1,32 +1,32 @@
 import logo from "media/cacao-tech.png";
-import "styles/inicio.css"; 
+import "styles/inicio.css";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
- 
+
 // function Header() {
-const Header = () =>{   
-const { loginWithRedirect } = useAuth0();
-return (
-  <header>
-    <div className="">
-      <div className="row  ">
-        <div className="flex flex-col justify-center ">
-          <img src={logo} className="object-fill h- max-h-40" alt="cacao-tech2-0" />
+const Header = () => {
+  const { loginWithRedirect } = useAuth0();
+  return (
+    <header>
+      <div className="">
+        <div className="row  ">
+          <div className="flex flex-col justify-center ">
+            <img src={logo} className="object-fill h- max-h-40" alt="cacao-tech2-0" />
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div color="#d16b18">
-      {/* <MenuMobile /> */}
-      <div className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-shrink mx-auto box-content  wrapper menu-bg custom-menu-bg border-bottom-black-tr  ">
 
-   
+      <div color="#d16b18">
+        {/* <MenuMobile /> */}
+        <div className="    collapse navbar-collapse navbar navbar-expand-sm navbar-light   fondo flex flex-shrink mx-auto box-content  wrapper menu-bg custom-menu-bg border-bottom-black-tr  ">
+
+
 
           <div target="nav-collapse"></div>
           <div id="nav-collapse" is-nav={true.toString()}>
 
             <div className="menu nav justify-content-start pr-8 hidden md:block   ">
- 
+
               <ul
                 id="menu-menu-1" className="menu  flex  justify-end">
                 <li className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item menu-item-21">
@@ -48,7 +48,7 @@ return (
                     <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
                       <Link to="/cursos/curso-control-plagas">
                         CURSO CONTROL DE PLAGAS
-                      </Link>  
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -57,12 +57,12 @@ return (
                   <ul className="sub-menu">
                     <li id="menu-item-160" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-160">
                       <Link to="/products/fertilizantes" className=" nav-linkhas-sub-menu">
-                        FERTILIZANTES  
+                        FERTILIZANTES
                       </Link>
                     </li>
                     <li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174">
-                      <Link to="/products/plaguicidas"className=" nav-linkhas-sub-menu">                          
-                        PLAGUICIDAS  
+                      <Link to="/products/plaguicidas" className=" nav-linkhas-sub-menu">
+                        PLAGUICIDAS
                       </Link>
                     </li>
                     <li id="menu-item-186" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-186">
@@ -71,13 +71,13 @@ return (
                       </Link>
                     </li>
                     <li id="menu-item-198" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-198">
-                      <Link to="/products/herramientas" className=" nav-linkhas-sub-menu">                          
+                      <Link to="/products/herramientas" className=" nav-linkhas-sub-menu">
                         HERRAMIENTAS
                       </Link>
                     </li>
                     <li id="menu-item-209" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-209">
-                      <Link to="/products/infraestructura" className=" nav-linkhas-sub-menu">                          
-                        INFRAESTRUCTURA  
+                      <Link to="/products/infraestructura" className=" nav-linkhas-sub-menu">
+                        INFRAESTRUCTURA
                       </Link>
                     </li>
                   </ul>
@@ -89,22 +89,22 @@ return (
                   </Link>
                 </li>
                 <li className="     ">
-                   
-                    <button onClick={() => loginWithRedirect()} class="botonGenerico mainButton  inline-block  align-top">
-                      <p class="textbutton">Acceder</p>  
-                    </button>
-                  
+
+                  <button onClick={() => loginWithRedirect()} class="botonGenerico mainButton  inline-block  align-top">
+                    <p class="textbutton">Acceder</p>
+                  </button>
+
                 </li>
-  
+
               </ul>
             </div>
             <b-navbar-nav className="ml-auto"></b-navbar-nav>
           </div>
-        </div> 
-      </div> 
-    
+        </div>
+      </div>
 
-    {/* <ul class="navbar">
+
+      {/* <ul class="navbar">
       <li>
         <img src={logo} alt="imagen" class="logo" />
       </li>
@@ -117,8 +117,8 @@ return (
       </li>
  
 </ul>*/}
-  </header>
-);
+    </header>
+  );
 }
 
 export default Header;

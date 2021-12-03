@@ -3,6 +3,7 @@ import Header from "components/Header"
 import MenuMobile from "components/MenuMobile" 
 
 const Layout = ({children}) => {
+    
     return (
         <div className = 'mainContainer'>
             <Header />
